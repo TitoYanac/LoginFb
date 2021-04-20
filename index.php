@@ -6,6 +6,6 @@
 	<title>Login con Facebook</title>
 </head>
 <body>
-	
+	<h1>testing login con fb</h1>
 </body>
 </html>
