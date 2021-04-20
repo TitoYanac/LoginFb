@@ -53,7 +53,7 @@ function getFbUserData(){
     FB.api('/me', {locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture'},
     function (response) {
         document.getElementById('fbLink').setAttribute("onclick","fbLogout()");
-        document.getElementById('fbLink').innerHTML = 'Logout from Facebook';
+        document.getElementById('fbLink').innerHTML = '<img src="images/fb-logout-btn.png"/>';
         document.getElementById('status').innerHTML = '<p>Thanks for logging in, ' + response.first_name + '!</p>';
         document.getElementById('userData').innerHTML = '<h2>Facebook Profile Details</h2><p><img src="'+response.picture.data.url+'"/></p><p><b>FB ID:</b> '+response.id+'</p><p><b>Name:</b> '+response.first_name+' '+response.last_name+'</p><p><b>Email:</b> '+response.email+'</p><p><b>Gender:</b> '+response.gender+'</p><p><b>FB Profile:</b> <a target="_blank" href="'+response.link+'">click to view profile</a></p>';
     });
