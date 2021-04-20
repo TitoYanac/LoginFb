@@ -65,6 +65,8 @@ function statusChangeCallback(response) {
   onlogin="checkLoginState();">
 </fb:login-button>
 
+<button onclick="checkLoginState();"> login</button>
+
 <div id="status"></div>
 </body>
 </html>
