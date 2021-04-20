@@ -56,6 +56,12 @@ function statusChangeCallback(response) {
           'into this app.';
     }
 }
+function logoutfb(argument) {
+	FB.logout(function(response) {
+	  // user is now logged out
+	});
+	// body...
+}
 </script>
 <body>
 	<h1>testing login con fb</h1>
@@ -66,6 +72,7 @@ function statusChangeCallback(response) {
 </fb:login-button>
 
 <button onclick="checkLoginState();"> login</button>
+<button onclick="logoutfb();"> logout</button>
 
 <div id="status"></div>
 </body>
